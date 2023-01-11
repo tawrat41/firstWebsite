@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes sliding {
+            from{
+                background-color: brown;
+                left: 0px;
+            }
+            to{
+                background-color: black;
+                left: 200px;
+            }
+        }
         /* .mega-box{
             width: 500px;
             height: 400px;
@@ -27,18 +37,18 @@
             overflow: hidden;
             text-overflow: ellipsis;
         } */
-        .field{
+        /* .field{
             border: 2px solid green;
-        }
-        .bat{
+        } */
+        /* .bat{
             height: 400px;
             
         }
         .field:hover .bat{
             transform: rotate(-60deg);
             transform-origin: top right;
-        }
-        .ball{
+        } */
+        /* .ball{
             height: 50px;
             width: 50px;
             background-color: red;
@@ -47,11 +57,29 @@
             left: 500px;
             top: -150px;
             transition: transform 1s ease-out .1s;
-        }
-        .field:hover .ball{
+        } */
+        /* .field:hover .ball{
             transform: translate(500px);
-            
+        } */
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
         }
+        
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: palevioletred;
+            position: relative;
+            animation: sliding 5s ease-in-out 1 10 alternate;
+            animation-play-state: running;
+        }
+
+        
+
+        
     </style>
 </head>
 <body>
@@ -65,10 +93,12 @@
      <div class="mini">
         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae impedit saepe.</p>
      </div> -->
-     <div class="field">
+     <!-- <div class="field">
         <img class="bat" src="/icons/bat.png" alt="">
         <div class="ball"></div>
-     </div>
+     </div> -->
+
+     
      
 </body>
 </html>

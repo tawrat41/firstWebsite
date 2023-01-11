@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes picture {
+            0%{
+                background-color: brown;
+                left: 0px;
+            }
+            100%{
+                background-color: black;
+                left: 500px;
+            }
+        }
+
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            border: 3px solid royalblue;
+        }
+        
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: palevioletred;
+            position: relative;
+            animation: picture 5s ease-in-out 1s infinite alternate;
+            animation-play-state:running;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello, CSS animation</h2>
+    <div class="box">
+        <div class="ball"></div>
+     </div>
+</body>
+</html>
