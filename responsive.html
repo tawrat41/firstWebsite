@@ -12,7 +12,7 @@
             gap: 10px;
         }
         .food img{
-            height: 300px;
+            /* height: 300px; */
             width: 75%;
         }
         .food{
@@ -30,9 +30,50 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+        .container-two{
+            display: flex;
+        }
+        .container-two .split{
+            width: 50%; 
+        }
+        .split img{
+            width: 100%;
+        }
+        @media screen and (max-width: 800px) {
+            .container-two{
+                flex-direction: column;
+            }
+            .container-two .split{
+            width: 100%; 
+        }
+        }
     </style>
 </head>
 <body>
+
+    1. viewport meta tag 
+    2. CSS relative unit
+        font-size: 2vw
+    3. Responsive image
+        width: 75%
+    4. body max-width and margin auto
+        max-width: 800px;
+        margin: 0 auto;
+    5. Responsive split screen using flex (2 columns)
+    6. Grid responsive (for multi column)
+    <section>
+        <h2>Two parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="/icons/ecom.png" alt="">
+            </div>
+            <div class="split">
+                <img src="/fruits.jpg" alt="">
+            </div>
+        </div>
+    </section>
+        
+
     <div class="container">
         <div class="food">
             <img src="fruits.jpg" alt="">
